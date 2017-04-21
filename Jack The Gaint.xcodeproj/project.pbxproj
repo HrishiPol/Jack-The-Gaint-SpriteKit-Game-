@@ -17,6 +17,12 @@
 		7E3FB1E51EA78F450097E6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1E31EA78F450097E6E1 /* LaunchScreen.storyboard */; };
 		7E3FB1F01EA78F450097E6E1 /* Jack_The_GaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB1EF1EA78F450097E6E1 /* Jack_The_GaintTests.swift */; };
 		7E3FB1FB1EA78F450097E6E1 /* Jack_The_GaintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB1FA1EA78F450097E6E1 /* Jack_The_GaintUITests.swift */; };
+		7E3FB2E01EA7938A0097E6E1 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB2DF1EA7938A0097E6E1 /* MyScene.sks */; };
+		7E3FB2E41EA799D90097E6E1 /* MyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB2E31EA799D90097E6E1 /* MyScene.swift */; };
+		7E3FB2E71EA7A0740097E6E1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB2E61EA7A0740097E6E1 /* Player.swift */; };
+		7E3FB2E91EA7A92A0097E6E1 /* Player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB2E81EA7A9290097E6E1 /* Player.atlas */; };
+		7E3FB2EC1EA89BDA0097E6E1 /* BGClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB2EB1EA89BDA0097E6E1 /* BGClass.swift */; };
+		7E3FB2EF1EA8B3B90097E6E1 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB2EE1EA8B3B90097E6E1 /* CloudController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		7E3FB1F61EA78F450097E6E1 /* Jack The GaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jack The GaintUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3FB1FA1EA78F450097E6E1 /* Jack_The_GaintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jack_The_GaintUITests.swift; sourceTree = "<group>"; };
 		7E3FB1FC1EA78F450097E6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3FB2DF1EA7938A0097E6E1 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyScene.sks; path = Scenes/MyScene.sks; sourceTree = "<group>"; };
+		7E3FB2E31EA799D90097E6E1 /* MyScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyScene.swift; path = "Scene Classes/MyScene.swift"; sourceTree = "<group>"; };
+		7E3FB2E61EA7A0740097E6E1 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = "Player Classes/Player.swift"; sourceTree = "<group>"; };
+		7E3FB2E81EA7A9290097E6E1 /* Player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Player.atlas; sourceTree = "<group>"; };
+		7E3FB2EB1EA89BDA0097E6E1 /* BGClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BGClass.swift; path = "Background Classes/BGClass.swift"; sourceTree = "<group>"; };
+		7E3FB2EE1EA8B3B90097E6E1 /* CloudController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudController.swift; path = "Cloud Classes/CloudController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +95,10 @@
 		7E3FB1C81EA78F440097E6E1 = {
 			isa = PBXGroup;
 			children = (
+				7E3FB2E81EA7A9290097E6E1 /* Player.atlas */,
 				7E3FB1D31EA78F440097E6E1 /* Jack The Gaint */,
+				7E3FB2DE1EA793600097E6E1 /* Scenes */,
+				7E3FB2E11EA7998A0097E6E1 /* Game classes */,
 				7E3FB1EE1EA78F450097E6E1 /* Jack The GaintTests */,
 				7E3FB1F91EA78F450097E6E1 /* Jack The GaintUITests */,
 				7E3FB1D21EA78F440097E6E1 /* Products */,
@@ -132,6 +147,57 @@
 				7E3FB1FC1EA78F450097E6E1 /* Info.plist */,
 			);
 			path = "Jack The GaintUITests";
+			sourceTree = "<group>";
+		};
+		7E3FB2DE1EA793600097E6E1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FB2DF1EA7938A0097E6E1 /* MyScene.sks */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		7E3FB2E11EA7998A0097E6E1 /* Game classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FB2ED1EA8B38F0097E6E1 /* Cloud Classes */,
+				7E3FB2EA1EA89BB60097E6E1 /* Background Classes */,
+				7E3FB2E51EA7A04C0097E6E1 /* Player Classes */,
+				7E3FB2E21EA799A70097E6E1 /* Scene Classes */,
+			);
+			name = "Game classes";
+			sourceTree = "<group>";
+		};
+		7E3FB2E21EA799A70097E6E1 /* Scene Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FB2E31EA799D90097E6E1 /* MyScene.swift */,
+			);
+			name = "Scene Classes";
+			sourceTree = "<group>";
+		};
+		7E3FB2E51EA7A04C0097E6E1 /* Player Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FB2E61EA7A0740097E6E1 /* Player.swift */,
+			);
+			name = "Player Classes";
+			sourceTree = "<group>";
+		};
+		7E3FB2EA1EA89BB60097E6E1 /* Background Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FB2EB1EA89BDA0097E6E1 /* BGClass.swift */,
+			);
+			name = "Background Classes";
+			sourceTree = "<group>";
+		};
+		7E3FB2ED1EA8B38F0097E6E1 /* Cloud Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FB2EE1EA8B3B90097E6E1 /* CloudController.swift */,
+			);
+			name = "Cloud Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +315,8 @@
 				7E3FB1E21EA78F450097E6E1 /* Assets.xcassets in Resources */,
 				7E3FB1E51EA78F450097E6E1 /* LaunchScreen.storyboard in Resources */,
 				7E3FB1D91EA78F450097E6E1 /* Actions.sks in Resources */,
+				7E3FB2E91EA7A92A0097E6E1 /* Player.atlas in Resources */,
+				7E3FB2E01EA7938A0097E6E1 /* MyScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3FB2E41EA799D90097E6E1 /* MyScene.swift in Sources */,
 				7E3FB1DB1EA78F450097E6E1 /* GameScene.swift in Sources */,
 				7E3FB1DD1EA78F450097E6E1 /* GameViewController.swift in Sources */,
+				7E3FB2E71EA7A0740097E6E1 /* Player.swift in Sources */,
+				7E3FB2EF1EA8B3B90097E6E1 /* CloudController.swift in Sources */,
 				7E3FB1D51EA78F440097E6E1 /* AppDelegate.swift in Sources */,
+				7E3FB2EC1EA89BDA0097E6E1 /* BGClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
