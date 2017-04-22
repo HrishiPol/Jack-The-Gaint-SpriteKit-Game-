@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E28FC5E1EAB3B09000A6599 /* HighScoreScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E28FC5D1EAB3B09000A6599 /* HighScoreScene.sks */; };
 		7E28FC601EAB3E79000A6599 /* blow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E28FC5F1EAB3E79000A6599 /* blow.ttf */; };
+		7E28FC621EAB4B78000A6599 /* OptionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E28FC611EAB4B78000A6599 /* OptionScene.sks */; };
 		7E3FB1D51EA78F440097E6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D41EA78F440097E6E1 /* AppDelegate.swift */; };
 		7E3FB1D71EA78F440097E6E1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D61EA78F440097E6E1 /* GameScene.sks */; };
 		7E3FB1D91EA78F450097E6E1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D81EA78F450097E6E1 /* Actions.sks */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		7E28FC5D1EAB3B09000A6599 /* HighScoreScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = HighScoreScene.sks; path = Scenes/HighScoreScene.sks; sourceTree = "<group>"; };
 		7E28FC5F1EAB3E79000A6599 /* blow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blow.ttf; sourceTree = "<group>"; };
+		7E28FC611EAB4B78000A6599 /* OptionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = OptionScene.sks; path = Scenes/OptionScene.sks; sourceTree = "<group>"; };
 		7E3FB1D11EA78F440097E6E1 /* Jack The Gaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jack The Gaint.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3FB1D41EA78F440097E6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E3FB1D61EA78F440097E6E1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				7E3FB2DF1EA7938A0097E6E1 /* MyScene.sks */,
 				7E5107671EAA100E00499761 /* MainMenu.sks */,
 				7E28FC5D1EAB3B09000A6599 /* HighScoreScene.sks */,
+				7E28FC611EAB4B78000A6599 /* OptionScene.sks */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				7E28FC601EAB3E79000A6599 /* blow.ttf in Resources */,
 				7E3FB1E01EA78F450097E6E1 /* Main.storyboard in Resources */,
 				7E3FB1D71EA78F440097E6E1 /* GameScene.sks in Resources */,
+				7E28FC621EAB4B78000A6599 /* OptionScene.sks in Resources */,
 				7E3FB1E21EA78F450097E6E1 /* Assets.xcassets in Resources */,
 				7E3FB1E51EA78F450097E6E1 /* LaunchScreen.storyboard in Resources */,
 				7E3FB1D91EA78F450097E6E1 /* Actions.sks in Resources */,
