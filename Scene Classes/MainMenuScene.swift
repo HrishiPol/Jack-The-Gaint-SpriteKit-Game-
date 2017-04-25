@@ -34,6 +34,7 @@ class MainMenu: SKScene{
 
             if atPoint(location) == startBtn {
                 // Start Game.
+                GameManager.instance.gameStartedFromMainMenu = true;
                 let scene = MyScene(fileNamed: "MyScene");
                 scene?.scaleMode = .aspectFill;
                 self.view?.presentScene(scene!, transition: SKTransition.doorsCloseVertical(withDuration: 1.5));

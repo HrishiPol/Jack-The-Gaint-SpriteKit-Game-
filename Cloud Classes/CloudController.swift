@@ -12,6 +12,8 @@ import SpriteKit
 class CloudController {
     
     var lastCloudPositionY = CGFloat();
+    let collectableController = CollectableController();
+    
 
     func createClouds() -> [SKSpriteNode]{
         
@@ -138,6 +140,22 @@ class CloudController {
             }
             clouds[i].position = CGPoint(x: randomX, y: positionY);
             clouds[i].zPosition = 3;
+            
+            if !initialClouds {
+                
+                if Int(randomBetweenNumbers(firstNum: 0, secondNum: 7)) >= 1  {
+                
+                    if clouds[i].name != "Dark Cloud" {
+                        
+                        let collectable = collectableController.getCollectable();
+                        collectable.position = CGPoint(x: clouds[i].position.x, y: clouds[i].position.y + 60);
+                        
+                        scene.addChild(collectable);
+                    }
+                }
+                
+            }
+            
             scene.addChild(clouds[i]);
             
             positionY -= distanceBetweenClouds;

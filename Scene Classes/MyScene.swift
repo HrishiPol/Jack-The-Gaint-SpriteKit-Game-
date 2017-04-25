@@ -94,6 +94,8 @@ class MyScene: SKScene{
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode!;
         
         getBackgrounds();
+        getLabels();
+        GamePlayController.instance.initializeVariables();
         
         cloudsController.arrangeCloudsInScene(scene: self.scene!, distanceBetweenClouds: distanceBetweenClouds, center: center!, minX: minX, maxX: maxX, initialClouds: true);
         
@@ -125,6 +127,13 @@ class MyScene: SKScene{
     func moveCamera(){
         
         self.mainCamera?.position.y -= 3;
+    }
+    
+    func getLabels(){
+        
+        GamePlayController.instance.scoreText = self.mainCamera?.childNode(withName: "lblScore") as? SKLabelNode;
+        GamePlayController.instance.lifeText = self.mainCamera?.childNode(withName: "lblLife") as? SKLabelNode;
+        GamePlayController.instance.coinText = self.mainCamera?.childNode(withName: "lblCoin") as? SKLabelNode;
     }
     
     func createNewClouds(){
