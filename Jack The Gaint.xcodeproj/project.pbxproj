@@ -15,6 +15,7 @@
 		7E30ACA31EAE057D00EBA4F4 /* GamePlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA21EAE057D00EBA4F4 /* GamePlayController.swift */; };
 		7E30ACA51EAF1F1C00EBA4F4 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA41EAF1F1C00EBA4F4 /* GameManager.swift */; };
 		7E30ACA71EAF228600EBA4F4 /* CollectableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA61EAF228600EBA4F4 /* CollectableController.swift */; };
+		7E30ACAA1EAF5BE800EBA4F4 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA91EAF5BE800EBA4F4 /* GameData.swift */; };
 		7E3FB1D51EA78F440097E6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D41EA78F440097E6E1 /* AppDelegate.swift */; };
 		7E3FB1D71EA78F440097E6E1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D61EA78F440097E6E1 /* GameScene.sks */; };
 		7E3FB1D91EA78F450097E6E1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D81EA78F450097E6E1 /* Actions.sks */; };
@@ -61,6 +62,7 @@
 		7E30ACA21EAE057D00EBA4F4 /* GamePlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayController.swift; sourceTree = "<group>"; };
 		7E30ACA41EAF1F1C00EBA4F4 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		7E30ACA61EAF228600EBA4F4 /* CollectableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableController.swift; path = "Cloud Classes/CollectableController.swift"; sourceTree = "<group>"; };
+		7E30ACA91EAF5BE800EBA4F4 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		7E3FB1D11EA78F440097E6E1 /* Jack The Gaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jack The Gaint.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3FB1D41EA78F440097E6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E3FB1D61EA78F440097E6E1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 				7E30ACA41EAF1F1C00EBA4F4 /* GameManager.swift */,
 			);
 			name = "Game Controllers and Managers";
+			sourceTree = "<group>";
+		};
+		7E30ACA81EAF5BC500EBA4F4 /* Game Data Class */ = {
+			isa = PBXGroup;
+			children = (
+				7E30ACA91EAF5BE800EBA4F4 /* GameData.swift */,
+			);
+			name = "Game Data Class";
 			sourceTree = "<group>";
 		};
 		7E3FB1C81EA78F440097E6E1 = {
@@ -193,6 +203,7 @@
 		7E3FB2E11EA7998A0097E6E1 /* Game classes */ = {
 			isa = PBXGroup;
 			children = (
+				7E30ACA81EAF5BC500EBA4F4 /* Game Data Class */,
 				7E30ACA11EAE04F000EBA4F4 /* Game Controllers and Managers */,
 				7E3FB2ED1EA8B38F0097E6E1 /* Cloud Classes And Collectable Controller */,
 				7E3FB2EA1EA89BB60097E6E1 /* Background Classes */,
@@ -392,6 +403,7 @@
 				7E3FB2EF1EA8B3B90097E6E1 /* CloudController.swift in Sources */,
 				7E3FB1D51EA78F440097E6E1 /* AppDelegate.swift in Sources */,
 				7E51076C1EAA1CE200499761 /* MainMenuScene.swift in Sources */,
+				7E30ACAA1EAF5BE800EBA4F4 /* GameData.swift in Sources */,
 				7E30ACA71EAF228600EBA4F4 /* CollectableController.swift in Sources */,
 				7E30ACA31EAE057D00EBA4F4 /* GamePlayController.swift in Sources */,
 				7E3FB2EC1EA89BDA0097E6E1 /* BGClass.swift in Sources */,

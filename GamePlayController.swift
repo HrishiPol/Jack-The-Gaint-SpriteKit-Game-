@@ -46,4 +46,26 @@ class GamePlayController {
             lifeText?.text = "x\(String(describing: life!))";
         }
     }
+    
+    func incrementScore(){
+        
+        score! += 1;
+        scoreText?.text = "\(String(describing: score!))";
+    }
+    
+    func incrementCoin(){
+        
+        coin! += 1;
+        score! += 200;
+        coinText?.text = "x\(String(describing: coin!))";
+        scoreText?.text = "\(String(describing: score!))";
+    }
+    
+    func incrementLife(){
+        
+        life! += 1;
+        score! += 300;
+        scoreText?.text = "\(String(describing: score!))";
+        lifeText?.text = "x\(String(describing: life!))";
+    }
 }
