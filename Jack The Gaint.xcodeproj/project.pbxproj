@@ -16,6 +16,11 @@
 		7E30ACA51EAF1F1C00EBA4F4 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA41EAF1F1C00EBA4F4 /* GameManager.swift */; };
 		7E30ACA71EAF228600EBA4F4 /* CollectableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA61EAF228600EBA4F4 /* CollectableController.swift */; };
 		7E30ACAA1EAF5BE800EBA4F4 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACA91EAF5BE800EBA4F4 /* GameData.swift */; };
+		7E30ACAD1EB0BA5B00EBA4F4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30ACAC1EB0BA5B00EBA4F4 /* AudioManager.swift */; };
+		7E30ACB21EB0BB7600EBA4F4 /* Background music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E30ACAE1EB0BB7600EBA4F4 /* Background music.mp3 */; };
+		7E30ACB31EB0BB7600EBA4F4 /* Click Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7E30ACAF1EB0BB7600EBA4F4 /* Click Sound.wav */; };
+		7E30ACB41EB0BB7600EBA4F4 /* Coin Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7E30ACB01EB0BB7600EBA4F4 /* Coin Sound.wav */; };
+		7E30ACB51EB0BB7600EBA4F4 /* Life Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7E30ACB11EB0BB7600EBA4F4 /* Life Sound.wav */; };
 		7E3FB1D51EA78F440097E6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D41EA78F440097E6E1 /* AppDelegate.swift */; };
 		7E3FB1D71EA78F440097E6E1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D61EA78F440097E6E1 /* GameScene.sks */; };
 		7E3FB1D91EA78F450097E6E1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FB1D81EA78F450097E6E1 /* Actions.sks */; };
@@ -63,6 +68,11 @@
 		7E30ACA41EAF1F1C00EBA4F4 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		7E30ACA61EAF228600EBA4F4 /* CollectableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableController.swift; path = "Cloud Classes/CollectableController.swift"; sourceTree = "<group>"; };
 		7E30ACA91EAF5BE800EBA4F4 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		7E30ACAC1EB0BA5B00EBA4F4 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		7E30ACAE1EB0BB7600EBA4F4 /* Background music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Background music.mp3"; sourceTree = "<group>"; };
+		7E30ACAF1EB0BB7600EBA4F4 /* Click Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Sound.wav"; sourceTree = "<group>"; };
+		7E30ACB01EB0BB7600EBA4F4 /* Coin Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coin Sound.wav"; sourceTree = "<group>"; };
+		7E30ACB11EB0BB7600EBA4F4 /* Life Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Life Sound.wav"; sourceTree = "<group>"; };
 		7E3FB1D11EA78F440097E6E1 /* Jack The Gaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jack The Gaint.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3FB1D41EA78F440097E6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E3FB1D61EA78F440097E6E1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -131,9 +141,21 @@
 			name = "Game Data Class";
 			sourceTree = "<group>";
 		};
+		7E30ACAB1EB0BA4600EBA4F4 /* Audio Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7E30ACAC1EB0BA5B00EBA4F4 /* AudioManager.swift */,
+			);
+			name = "Audio Manager";
+			sourceTree = "<group>";
+		};
 		7E3FB1C81EA78F440097E6E1 = {
 			isa = PBXGroup;
 			children = (
+				7E30ACAE1EB0BB7600EBA4F4 /* Background music.mp3 */,
+				7E30ACAF1EB0BB7600EBA4F4 /* Click Sound.wav */,
+				7E30ACB01EB0BB7600EBA4F4 /* Coin Sound.wav */,
+				7E30ACB11EB0BB7600EBA4F4 /* Life Sound.wav */,
 				7E28FC5F1EAB3E79000A6599 /* blow.ttf */,
 				7E3FB2E81EA7A9290097E6E1 /* Player.atlas */,
 				7E3FB1D31EA78F440097E6E1 /* Jack The Gaint */,
@@ -203,6 +225,7 @@
 		7E3FB2E11EA7998A0097E6E1 /* Game classes */ = {
 			isa = PBXGroup;
 			children = (
+				7E30ACAB1EB0BA4600EBA4F4 /* Audio Manager */,
 				7E30ACA81EAF5BC500EBA4F4 /* Game Data Class */,
 				7E30ACA11EAE04F000EBA4F4 /* Game Controllers and Managers */,
 				7E3FB2ED1EA8B38F0097E6E1 /* Cloud Classes And Collectable Controller */,
@@ -359,16 +382,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E30ACB31EB0BB7600EBA4F4 /* Click Sound.wav in Resources */,
 				7E28FC601EAB3E79000A6599 /* blow.ttf in Resources */,
 				7E3FB1E01EA78F450097E6E1 /* Main.storyboard in Resources */,
 				7E3FB1D71EA78F440097E6E1 /* GameScene.sks in Resources */,
+				7E30ACB21EB0BB7600EBA4F4 /* Background music.mp3 in Resources */,
 				7E28FC621EAB4B78000A6599 /* OptionScene.sks in Resources */,
+				7E30ACB51EB0BB7600EBA4F4 /* Life Sound.wav in Resources */,
 				7E3FB1E21EA78F450097E6E1 /* Assets.xcassets in Resources */,
 				7E3FB1E51EA78F450097E6E1 /* LaunchScreen.storyboard in Resources */,
 				7E3FB1D91EA78F450097E6E1 /* Actions.sks in Resources */,
 				7E5107681EAA100E00499761 /* MainMenu.sks in Resources */,
 				7E3FB2E91EA7A92A0097E6E1 /* Player.atlas in Resources */,
 				7E3FB2E01EA7938A0097E6E1 /* MyScene.sks in Resources */,
+				7E30ACB41EB0BB7600EBA4F4 /* Coin Sound.wav in Resources */,
 				7E28FC5E1EAB3B09000A6599 /* HighScoreScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +424,7 @@
 				7E3FB2E41EA799D90097E6E1 /* MyScene.swift in Sources */,
 				7E30ACA51EAF1F1C00EBA4F4 /* GameManager.swift in Sources */,
 				7E3FB1DB1EA78F450097E6E1 /* GameScene.swift in Sources */,
+				7E30ACAD1EB0BA5B00EBA4F4 /* AudioManager.swift in Sources */,
 				7E3FB1DD1EA78F450097E6E1 /* GameViewController.swift in Sources */,
 				7E28FC641EAB651F000A6599 /* HighScoreScene.swift in Sources */,
 				7E3FB2E71EA7A0740097E6E1 /* Player.swift in Sources */,
